@@ -48,12 +48,18 @@
 
 6. **Adjust discriminator structure**: `nn_layer.py` can be used to change the structure of the discriminators and refinment FFNs.
 
-7. **Run the model**: Fill `main_test.py` with the hyperparameters of choice and run the model for a given amount of epochs. Results will be stored in Result_Files, including runtime, accuracy per sentiment polarity, train accuracy and general (maximum) test accuracy. Uncomment the models you want to train and test to obtain results.
+7. **Adjust the number of HCL iterations**: In  `HCL_DAT_LCR_Rot_hop.py`, the number of HCL iterations can be changed. `hierarchical_iterations=1` corresponds to the model from Verschoor (2025). `hierarchical_iterations=2` and `hierarchical_iterations=3` corresponds to the extension in our work. 
+
+8. **Run the model**: Fill `main_test.py` with the hyperparameters of choice and run the model for a given amount of epochs. Results will be stored in Result_Files, including runtime, accuracy per sentiment polarity, train accuracy and general (maximum) test accuracy. Uncomment the models you want to train and test to obtain results.
 
 
 ## References
 
-This code is adapted from Knoester, Frasincar and Trușca. (2022).
+This code is adapted from Verschoor (2025).
+
+[https://github.com/Johan-Verschoor/CL-XD-ABSA](https://github.com/Johan-Verschoor/CL-XD-ABSA).
+
+Their code is based on the work of Knoester, Frasincar and Trușca (2022)
 
 [https://github.com/jorisknoester/DAT-LCR-Rot-hop-PLUS-PLUS/](https://github.com/jorisknoester/DAT-LCR-Rot-hop-PLUS-PLUS/)
 
