@@ -1,0 +1,10 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+
+# VSCode settings
+.vscode/
+
+# Ignore OS metadata
+.DS_Store
+Thumbs.db
